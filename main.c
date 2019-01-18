@@ -103,21 +103,26 @@ int main(){
             }
         }
         if(code == 6){
-            int min = 0;
-            int id;
+        
+            int max = 0;
+            int id = 0;
 
             for(int i = 0; i < index; i++){
                 int sum;
                 sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
-                if (sum > min){
-                    min = sum;
-                    id=i;
+                if (sum > max){
+                    max = sum;
+                    id=i + 1;
                 }
             }
-            printf("姓名: %s,总分:%d\n",arr[id].name,min);
+            printf("第%d名学生%s的总成绩最高，最高为%d\n", id, arr[id].name, max);
+            printf("筛选完成，点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if(code == 7){
-
+           
         }
         if(code == 8){
             printf("退出\n");
