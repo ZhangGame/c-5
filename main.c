@@ -29,7 +29,21 @@ int main(){
         scanf("%d",&code);
 
         if(code == 1){
+            printf("请输入学生姓名\n");
+            scanf("%s",arr[index].name);
+            printf("请输入语文成绩\n");
+            scanf("%d",&(arr[index].yuwen));
+            printf("请输入数学成绩\n");
+            scanf("%d",&(arr[index].shuxue));
+            printf("请输入英语成绩\n");
+            scanf("%d",&(arr[index].yingyu));
+            index++;
 
+            printf("添加成功，回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
+            
         }
         if(code == 2){
 
