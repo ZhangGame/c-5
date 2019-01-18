@@ -43,9 +43,19 @@ int main(){
             char x;
             scanf("%c",&x);
             scanf("%c",&x);
-            
+
         }
         if(code == 2){
+            if(index>0){
+                index--;
+                printf("删除成功，回车继续\n");
+            }
+            else{
+                printf("当前无可删除的学生信息\n");
+            }
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
 
         }
         if(code == 3){
