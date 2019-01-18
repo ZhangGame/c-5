@@ -88,7 +88,19 @@ int main(){
 
         }
         if(code == 5){
-
+            for(int i=0;i<index;i++){
+                if(arr[i].yuwen<60 && arr[i].shuxue<60 && arr[i].yingyu<60){
+                    printf("%s同学每一科成绩都不及格",arr[i].name);
+                    char x;
+                    scanf("%c",&x);
+                    scanf("%c",&x);
+                }else{
+                    printf("无不及格同学");
+                    char x;
+                    scanf("%c",&x);
+                    scanf("%c",&x);
+                }
+            }
         }
         if(code == 6){
 
