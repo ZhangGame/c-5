@@ -103,7 +103,18 @@ int main(){
             }
         }
         if(code == 6){
+            int min = 0;
+            int id;
 
+            for(int i = 0; i < index; i++){
+                int sum;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if (sum > min){
+                    min = sum;
+                    id=i;
+                }
+            }
+            printf("姓名: %s,总分:%d\n",arr[id].name,min);
         }
         if(code == 7){
 
