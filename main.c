@@ -122,7 +122,29 @@ int main(){
             scanf("%c", &x);
         }
         if(code == 7){
-           
+           int average=0;
+           char id[100];
+           if(index>0){
+               for(int i=0;i<index;i++){
+                   if(arr[i].yuwen>60&&arr[i].shuxue>60&&arr[i].yingyu>60){
+                       for(int i=0;i<index;i++){
+                           if(id>average){
+                               average=id;
+                               strcpy(id,arr[i].name);
+                           }
+                       }
+                   }
+               }
+           }
+           else
+            {
+                printf("查询失败，无学生成绩信息\n");
+            }
+            printf("平均分最高，且没有不及格的学生是%s\n",id);
+            printf("点击回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if(code == 8){
             printf("退出\n");
