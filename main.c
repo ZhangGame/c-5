@@ -59,6 +59,14 @@ int main(){
 
         }
         if(code == 3){
+            printf("输出所有学生成绩:\n");
+            for(int i=0;i<index;i++){
+                printf("第%d个学生%s语文成绩%d数学成绩%d英语成绩%d",i+1,arr[i].name,arr[i].yuwen,arr[i].shuxue,arr[i].yingyu);
+
+            }
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
 
         }
         if(code == 4){
